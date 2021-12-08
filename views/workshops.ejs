@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ARKA-IIT(ISM)DHANBAD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+        <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+        <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        
+        
+        <!-- FONTS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        
+        
+        <script src="https://kit.fontawesome.com/823efed4f3.js" crossorigin="anonymous"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+        <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+        <script src="js/superfish.min.js" type="text/javascript"></script>
+        <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+        <script src="js/owl.carousel.js" type="text/javascript"></script>
+        <script src="js/animate.js" type="text/javascript"></script>
+        <script src="js/jquery.BlackAndWhite.js"></script>
+        <script src="js/myscript.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+        <script>
+    
+            //PrettyPhoto
+            jQuery(document).ready(function() {
+                $("a[rel^='prettyPhoto']").prettyPhoto();
+            });
+    
+            //BlackAndWhite
+            $(window).load(function(){
+                $('.client_img').BlackAndWhite({
+                    hoverEffect : true,
+                    webworkerPath : false,
+                    // for the images with a fluid width and height
+                    responsive:true,
+                    // to invert the hover effect
+                    invertHoverEffect: false,
+                    intensity:1,
+                    speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+                        fadeIn: 300, // 200ms for fadeIn animations
+                        fadeOut: 300 // 800ms for fadeOut animations
+                    },
+                    onImageReady:function(img) {
+                        // this callback gets executed anytime an image is converted
+                    }
+                });
+            });
+    
+        </script>   
+    </head>
+    <body>
+        <img id="preloader" src="images/preloader.gif" alt="" />
+        <div class="preloader_hide" style="background-image: url('images/bg3.jpg'); background-size: cover;">
+            <div id="events-page">
+                <!-- HEADER -->
+                <header>
+                    <!-- MENU BLOCK -->
+                    <div class="menu_block" style="background-image: linear-gradient(45deg,rgb(243, 227, 227),white);">
+                        <!-- CONTAINER -->
+                        <div class="container clearfix">
+                            <!-- LOGO -->
+                            <div class="logo pull-left">
+                                <a href="" ><img src="images/logo/Arka_logo.jfif" id="header-logo">&nbsp;<span style="font-size: 2.5rem; font-family: Arial, Helvetica, sans-serif">Workshops</span></a>
+                            </div><!-- //LOGO -->
+    
+                            <!-- MENU -->
+                            <div class="pull-right">
+                                <nav class="navmenu center">
+                                    <ul>
+                                        <li class="first active scroll_btn"><a href="index" >Home</a></li>
+                                        <li class="scroll_btn"><a href="events">Events</a></li>
+                                        <li class="scroll_btn last"><a href="arkareels">Arka Reels</a></li>
+                                        <li class="scroll_btn last"><a href="arkanews">Arka News</a></li>
+                                        <li class="scroll_btn last"><a href="members">Members</a></li>
+                                    </ul>
+                                </nav>
+                            </div><!-- //MENU -->
+                        </div><!-- //MENU BLOCK -->
+                    </div><!-- //CONTAINER -->
+                </header><!-- //HEADER -->
+
+                <h1 style="text-align: center; color: rgb(238, 224, 224); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-top: 40vh;">No Workshops as of now</h1>
+
+            </div>
+
+            <div id="footer" style="background-color: black;">
+                <div class="container" style="display: inline-block;">
+                    <div style="display: inline-block; color: rgb(94, 83, 83);"><p class="lead">Copyright &copy; ARKA IIT(ISM)</p></div>
+                    <div style="display: inline-block; text-align: right;">
+                        <a href="#" style="position: absolute; bottom: 0; right: 0; padding: 5; margin-bottom: 10px; margin-right: 2rem;"><img src="">
+                            <i class="bi bi-arrow-up-circle h1"></i>
+                        </a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        
+
+        
+        <script src=""></script>
+    </body>
+</html>
