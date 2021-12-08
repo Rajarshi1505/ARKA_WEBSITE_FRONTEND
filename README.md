@@ -1,2 +1,2 @@
 # ARKA_WEBSITE
- frontend for arka website
+ frontend for ARKA website
