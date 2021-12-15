@@ -1,376 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	
-	<meta charset="utf-8">
-	<title>ARKA-IIT(ISM)DHANBAD</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	
-	<link rel="shortcut icon" href="images/favicon.ico">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ARKA-IIT(ISM)DHANBAD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+        <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+        <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        
+        
+        <!-- FONTS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        
+        
+        <script src="https://kit.fontawesome.com/823efed4f3.js" crossorigin="anonymous"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+        <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+        <script src="js/superfish.min.js" type="text/javascript"></script>
+        <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+        <script src="js/owl.carousel.js" type="text/javascript"></script>
+        <script src="js/animate.js" type="text/javascript"></script>
+        <script src="js/jquery.BlackAndWhite.js"></script>
+        <script src="js/myscript.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+        <script>
     
-	<!-- CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
-	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/owl.carousel.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	
+            //PrettyPhoto
+            jQuery(document).ready(function() {
+                $("a[rel^='prettyPhoto']").prettyPhoto();
+            });
     
-	<!-- FONTS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	
-	
-	<script src="https://kit.fontawesome.com/823efed4f3.js" crossorigin="anonymous"></script>
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
-	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
-	<script src="js/superfish.min.js" type="text/javascript"></script>
-	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-	<script src="js/owl.carousel.js" type="text/javascript"></script>
-	<script src="js/animate.js" type="text/javascript"></script>
-	<script src="js/jquery.BlackAndWhite.js"></script>
-	<script src="js/myscript.js" type="text/javascript"></script>
-	<script src="js/index.js" type="text/javascript"></script>
-	<script>
+            //BlackAndWhite
+            $(window).load(function(){
+                $('.client_img').BlackAndWhite({
+                    hoverEffect : true,
+                    webworkerPath : false,
+                    // for the images with a fluid width and height
+                    responsive:true,
+                    // to invert the hover effect
+                    invertHoverEffect: false,
+                    intensity:1,
+                    speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+                        fadeIn: 300, // 200ms for fadeIn animations
+                        fadeOut: 300 // 800ms for fadeOut animations
+                    },
+                    onImageReady:function(img) {
+                        // this callback gets executed anytime an image is converted
+                    }
+                });
+            });
+    
+        </script>   
+    </head>
+    <body>
+        <img id="preloader" src="images/preloader.gif" alt="" />
+        <div class="preloader_hide">
+            <div id="events-page">
+                <!-- HEADER -->
+                <header>
+                    <!-- MENU BLOCK -->
+                    <div class="menu_block">
+                        <!-- CONTAINER -->
+                        <div class="container clearfix">
+                            <!-- LOGO -->
+                            <div class="logo pull-left">
+                                <a href="" ><img src="images/logo/Arka_logo.jfif" id="header-logo">&nbsp;<span style="font-size: 2.5rem; font-family: Arial, Helvetica, sans-serif">Arka News</span></a>
+                            </div><!-- //LOGO -->
+    
+                            <!-- MENU -->
+                            <div class="pull-right">
+                                <nav class="navmenu center">
+                                    <ul>
+                                        <li class="first active scroll_btn"><a href="index">Home</a></li>
+                                        <li class="scroll_btn"><a href="events">Events</a></li>
+                                        <li class="scroll_btn last"><a href="arkareels">Arka Reels</a></li>
+                                        <li class="scroll_btn last"><a href="workshops">Workshops</a></li>
+                                        <li class="scroll_btn last"><a href="members">Members</a></li>
+                                    </ul>
+                                </nav>
+                            </div><!-- //MENU -->
+                        </div><!-- //MENU BLOCK -->
+                    </div><!-- //CONTAINER -->
+                </header><!-- //HEADER -->
+            </div>
 
-		//PrettyPhoto
-		jQuery(document).ready(function() {
-			$("a[rel^='prettyPhoto']").prettyPhoto();
-		});
+            <div class="container news" id="news1">
+                <div clas="container">
+                    <div class="container" style="padding: 5vh;">
+                        <img src="images/news/halo22/pic1.jpg" class="news-img" alt="">
+                        &nbsp;&nbsp;&nbsp;
+                        <span style="margin-left: 10vw">
+                            <h1 style="text-align: center">Halo 22</h1>
+                            <p class="news-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Modi, voluptatibus sit. Aperiam doloribus optio sint reiciendis earum neque ipsam natus beatae rerum ipsum esse, autem fugiat, 
+                                consectetur illum laboriosam officiis.
+                            </p>
+                            <h3 style="text-align: center">Read More:<br>
+                                <a href="https://www.instagram.com/arka_iit_ism/" target="_blank"><i class="fab fa-instagram social-icons" style="color: grey;"></i></a> &nbsp;<a href="https://www.facebook.com/ARKAiitism/" target="_blank"><i class="fab fa-facebook-square social-icons" style="color: grey;"></i></a>
+                            </h3>
+                         </span>
+                    </div>
+                </div>
+            </div>
 
-		//BlackAndWhite
-		$(window).load(function(){
-			$('.client_img').BlackAndWhite({
-				hoverEffect : true,
-				webworkerPath : false,
-				// for the images with a fluid width and height
-				responsive:true,
-				// to invert the hover effect
-				invertHoverEffect: false,
-				intensity:1,
-				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
-					fadeIn: 300, // 200ms for fadeIn animations
-					fadeOut: 300 // 800ms for fadeOut animations
-				},
-				onImageReady:function(img) {
-					// this callback gets executed anytime an image is converted
-				}
-			});
-		});
+            <div class="container news" id="news2">
+                <div clas="container">
+                    <div class="container" style="padding: 5vh;">
+                        <img src="images/news/earth-like/earth-like1.jpg" class="news-img" alt="">
+                        &nbsp;&nbsp;&nbsp;
+                        <span style="margin-left: 10vw">
+                            <h1 style="text-align: center">Earth-like planet?</h1>
+                            <p class="news-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Modi, voluptatibus sit. Aperiam doloribus optio sint reiciendis earum neque ipsam natus beatae rerum ipsum esse, autem fugiat, 
+                                consectetur illum laboriosam officiis.
+                            </p>
+                            <h3 style="text-align: center">Read More:<br>
+                                <a href="https://www.instagram.com/arka_iit_ism/" target="_blank"><i class="fab fa-instagram social-icons" style="color: grey;"></i></a> &nbsp;<a href="https://www.facebook.com/ARKAiitism/" target="_blank"><i class="fab fa-facebook-square social-icons" style="color: grey;"></i></a>
+                            </h3>
+                         </span>
+                    </div>
+                </div>
+            </div>
 
-	</script>
+            <div class="container news" id="news3">
+                <div clas="container">
+                    <div class="container" style="padding: 5vh;">
+                        <img src="images/news/different-theories/df1.jpg" class="news-img" alt="">
+                        &nbsp;&nbsp;&nbsp;
+                        <span style="margin-left: 10vw">
+                            <h1 style="text-align: center">Differnet Theories...</h1>
+                            <p class="news-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Modi, voluptatibus sit. Aperiam doloribus optio sint reiciendis earum neque ipsam natus beatae rerum ipsum esse, autem fugiat, 
+                                consectetur illum laboriosam officiis.
+                            </p>
+                            <h3 style="text-align: center">Read More:<br>
+                                <a href="https://www.instagram.com/arka_iit_ism/" target="_blank"><i class="fab fa-instagram social-icons" style="color: grey;"></i></a> &nbsp;<a href="https://www.facebook.com/ARKAiitism/" target="_blank"><i class="fab fa-facebook-square social-icons" style="color: grey;"></i></a>
+                            </h3>
+                         </span>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Map Box -->
-	<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-	<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+            <div class="container news" id="news4">
+                <div clas="container">
+                    <div class="container" style="padding: 5vh;">
+                        <img src="images/news/lab-grown-analog-black-hole/bh1.jpg" class="news-img" alt="">
+                        &nbsp;&nbsp;&nbsp;
+                        <span style="margin-left: 10vw">
+                            <h1 style="text-align: center">Lab grown Analog Black Hole</h1>
+                            <p class="news-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Modi, voluptatibus sit. Aperiam doloribus optio sint reiciendis earum neque ipsam natus beatae rerum ipsum esse, autem fugiat, 
+                                consectetur illum laboriosam officiis.
+                            </p>
+                            <h3 style="text-align: center">Read More:<br>
+                                <a href="https://www.instagram.com/arka_iit_ism/" target="_blank"><i class="fab fa-instagram social-icons" style="color: grey;"></i></a> &nbsp;<a href="https://www.facebook.com/ARKAiitism/" target="_blank"><i class="fab fa-facebook-square social-icons" style="color: grey;"></i></a>
+                            </h3>
+                         </span>
+                    </div>
+                </div>
+            </div>
 
-</head>
-<body>
+            <div id="footer" style="background-color: black;">
+                <div class="container" style="display: inline-block;">
+                    <div style="display: inline-block; color: rgb(94, 83, 83);"><p class="lead">Copyright &copy; ARKA IIT(ISM)</p></div>
+                    <div style="display: inline-block; text-align: right;">
+                        <a href="#" style="position: absolute; bottom: 0; right: 0; padding: 5; margin-bottom: 10px; margin-right: 2rem;"><img src="">
+                            <i class="bi bi-arrow-up-circle h1"></i>
+                        </a>
+                    </div>
 
-	<!-- PRELOADER -->
-	<img id="preloader" src="images/preloader.gif" alt="" />
-	<!-- //PRELOADER -->
-	<div class="preloader_hide">
+                </div>
+            </div>
+        </div>
 
-		<!-- PAGE -->
-		<div id="page">
-			<!-- HEADER -->
-			<header>
-				<!-- MENU BLOCK -->
-				<div class="menu_block">
-					<!-- CONTAINER -->
-					<div class="container clearfix">
-						<!-- LOGO -->
-						<div class="logo pull-left">
-							<a href="" ><img src="images/logo/rocket.png" id="header-logo">&nbsp;<span class="b3" style="font-size:2.5rem;">arka</span></a>
-						</div><!-- //LOGO -->
 
-						<!-- MENU -->
-						<div class="pull-right">
-							<nav class="navmenu center">
-								<ul>
-									<li class="first active scroll_btn"><a href="#home" >Home</a></li>
-									<li class="scroll_btn"><a href="#about" >About Us</a></li>
-									<li class="scroll_btn"><a href="#founders" >Founders</a></li>
-									<li class="sub-menu">
-										<a href="javascript:void(0);" >Sections</a>
-										<ul>
-											<li><a href="events" >Events</a></li>
-											<li><a href="arkareels" >Arka Reels</a></li>
-											<li><a href="arkanews" >Arka News</a></li>
-											<li><a href="workshops" >Workshops</a></li>
-											<li><a href="members" >Members</a></li>
-										</ul>
-									</li>
-								</ul>
-							</nav>
-						</div><!-- //MENU -->
-					</div><!-- //MENU BLOCK -->
-				</div><!-- //CONTAINER -->
-			</header><!-- //HEADER -->
-
-			<!-- HOME -->
-			<section id="home" class="padbot0">
-
-				<!-- TOP SLIDER -->
-				<div class="flexslider top_slider" id="top_image">
-					<ul class="slides">
-						<li class="slide1">
-							<div class="flex_caption1">
-								<div class="container">
-									<p class="title1 captionDelay2 FromTop" style="font-size: 6.7rem; text-align:center;">ARKA</p>
-									<p class="title2 captionDelay4 FromTop" style="font-size: 5rem; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">&nbsp;ASTRONOMY CLUB</p>
-									<p class="title4 captionDelay9 FromBottom">Indian Institute of Technology, Dhanbad</p>
-									<div class="captionDelay7 FromBottom" style="margin-top: 4rem;">
-										<a href="https://in.linkedin.com/in/arka-iit-ism-dhanbad-19395a173" target="_blank"><i class="fab fa-linkedin-in social-icons"></i></a>
-										<a href="https://www.youtube.com/channel/UCHQb1JTUV9umHPS2WQThsvg" target="_blank"><i class="fab fa-youtube social-icons"></i></a>
-										<a href="https://www.instagram.com/arka_iit_ism/" target="_blank"><i class="fab fa-instagram social-icons"></i></a>
-										<a href="https://www.facebook.com/ARKAiitism/" target="_blank"><i class="fab fa-facebook-square social-icons"></i></a>
-										<a href="" target="_blank"><i class="fab fa-github social-icons"></i></a>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-				<div id="top-img-min">
-					<div class="container center" id="top-min-text" style="align-items: center;">
-						<div style="height: 5rem;"></div>
-						<p><span style="font-size: 4rem; padding-top: 20rem;">ARKA</span>&nbsp;&nbsp;<span style="font-size: 3rem; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">ASTRONOMY CLUB</span></p>
-						<p style="font-size: 2rem;">Indian Institute of Technology, Dhanbad</p>
-						<div style="margin-top: 1.5rem;">
-							<a href="https://in.linkedin.com/in/arka-iit-ism-dhanbad-19395a173" target="_blank"><i class="fab fa-linkedin-in social-min" style="font-size: 2 rem;"></i></a>
-							<a href="https://www.youtube.com/channel/UCHQb1JTUV9umHPS2WQThsvg" target="_blank"><i class="fab fa-youtube social-min"></i></a>
-							<a href="https://www.instagram.com/arka_iit_ism/" target="_blank"><i class="fab fa-instagram social-min"></i></a>
-							<a href="https://www.facebook.com/ARKAiitism/" target="_blank"><i class="fab fa-facebook-square social-min"></i></a>
-							<a href="" target="_blank"><i class="fab fa-github social-min"></i></a>
-						</div>		
-					</div>
-
-				</div>
-			</section><!-- //HOME -->
-			<!-- ABOUT -->
-			<section id="about">
-				<div class="container">
-
-					<!-- ROW -->
-					<div class="row">
-
-						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
-							<h1>About Arka</h1>
-							<p style="font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">ARKA stands for the Association for Research and Knowledge in Astronomy, and it is the official Astronomy and Physics club of IIT(ISM) Dhanbad.
-								The club was established on 5th December 2017 under the able leadership of six esteemed seniors of the batch of 2017.</p> 
-							<p style="font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">We are a team of die-hard space enthusiasts who admires the excellence of astronomy and space science and seek to spread its magnificence around us.</p>
-						</div>
-
-						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
-							<img class="ipad_img1" src="images/logo/rocket.png" style="height: 30rem; width: 30rem;border-radius: 50%; margin-top: -5rem;" alt="" />
-						</div>
-					</div><!-- //ROW -->
-				</div><!-- //CONTAINER -->
-				<div style="height: 5rem"></div>
-
-				<!-- CLEAN CODE -->
-				<div class="cleancode_block">
-
-					<!-- CONTAINER -->
-					<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-
-						<!-- CUSTOM TAB -->
-						<div id="myTabContent" class="tab-content">
-							<div class="tab-pane fade in active clearfix" id="tab1">
-								<p class="title">Arka Events</p>
-								<span style="color: white;">Check out our Events section to know <b>What we do</b></span>
-							</div>
-							<div class="tab-pane fade clearfix" id="tab3">
-								<p class="title">Arka Reels</p>
-								<span style="color: white;">Check out our Arka Reels section to watch our reels on the <b>Solar System and beyond</b></span>
-							</div>
-							<div class="tab-pane fade clearfix" id="tab4">
-								<p class="title">Arka News</p>
-								<span style="color: white;">Check out our Arka News section to stay updated about the latest <b>Astro news</b></span>
-							</div>
-							<div class="tab-pane fade clearfix" id="tab5">
-								<p class="title">Arka Workshops</p>
-								<span style="color: white;">Check out our Workshops section to know what we <b>Astro-geeks</b> do in free-time</span>
-							</div>
-							<div class="tab-pane fade clearfix" id="tab6">
-								<p class="title">Our Members</p>
-								<span style="color: white;">Check out our Members section to know our current crew-members</span>
-							</div>
-						</div>
-						<ul id="myTab" class="nav nav-tabs">
-							<li class="active"><a  href="#tab1" data-toggle="tab" ><i class="far fa-calendar-alt" style="font-size: 5rem;"></i><span>Arka Events</span></a></li>
-							<li><a href="#tab3" data-toggle="tab" ><i class="bi bi-camera-reels" style="font-size: 5rem;"></i><span>Arka Reels</span></a></li>
-							<li><a href="#tab4" data-toggle="tab" ><i class="bi bi-newspaper" style="font-size: 5rem;"></i><span>Arka News</span></a></li>
-							<li><a href="#tab5" data-toggle="tab" ><i class="fas fa-code-branch" style="font-size: 5rem;"></i><span>Arka Workshops</span></a></li>
-							<li><a href="#tab6" data-toggle="tab" ><i class="far fa-user" style="font-size: 5rem;"></i><span>Members</span></a></li>
-						</ul><!-- CUSTOM TAB -->
-					</div><!-- //CONTAINER -->
-				</div><!-- //CLEAN CODE -->
-			</section><!-- //ABOUT -->
-
-			<section class="text-light p-5" id="founders">
-				<div class="container" style="border-top: 5px solid rgba(230,196,196,0.2); padding-top: 50px;">
-					<h1 class="mt-2 mb-3 mb-md-0 text-center" id="our-members"><span>Our Founders</span></h1>
-					<br><br>
-					<div class="container">
-						<div class="row g-4">
-							<div class="col-md-6 col-lg-3">
-								<div class="card bg-light card-box">
-									<div class="card-body text-center">
-										<i class="fas fa-user team-icon"></i>
-										<h3 class="card-title mb-3" style="color: red;">#1</h3>
-										<p class="card-text" style="color: black;">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dolor ea officia quasi beatae mollitia consectetur velit dolorem ipsa at.
-										</p>
-										<a href="#" class=""><i class="bi bi-twitter text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-facebook text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-linkedin text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-github text-dark mx-1 team-social-icon"></i></a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-lg-3">
-								<div class="card bg-light card-box">
-									<div class="card-body text-center ">
-										<i class="fas fa-user team-icon"></i>
-										<h3 class="card-title mb-3" style="color: red;">#2</h3>
-										<p class="card-text" style="color: black;">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dolor ea officia quasi beatae mollitia consectetur velit dolorem ipsa at.
-										</p>
-										<a href="#" class=""><i class="bi bi-twitter text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-facebook text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-linkedin text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-github text-dark mx-1 team-social-icon"></i></a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-lg-3">
-								<div class="card bg-light card-box">
-									<div class="card-body text-center">
-										<i class="fas fa-user team-icon"></i>
-										<h3 class="card-title mb-3" style="color: red;">#3</h3>
-										<p class="card-text" style="color: black;">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dolor ea officia quasi beatae mollitia consectetur velit dolorem ipsa at.
-										</p>
-
-										<a href="#" class=""><i class="bi bi-twitter text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-facebook text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-linkedin text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-github text-dark mx-1 team-social-icon"></i></a>
-
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-lg-3">
-								<div class="card bg-light card-box">
-									<div class="card-body text-center">
-										<i class="fas fa-user team-icon"></i>
-										<h3 class="card-title mb-3" style="color: red;">#4</h3>
-										<p class="card-text" style="color: black;">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dolor ea officia quasi beatae mollitia consectetur velit dolorem ipsa at.
-										</p>
-										<a href="#" class=""><i class="bi bi-twitter text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-facebook text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-linkedin text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-github text-dark mx-1 team-social-icon"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="card bg-light card-box">
-									<div class="card-body text-center">
-										<i class="fas fa-user team-icon"></i>
-										<h3 class="card-title mb-3" style="color: red;">#5</h3>
-										<p class="card-text" style="color: black;">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dolor ea officia quasi beatae mollitia consectetur velit dolorem ipsa at.
-										</p>
-
-										<a href="#" class=""><i class="bi bi-twitter text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-facebook text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-linkedin text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-github text-dark mx-1 team-social-icon"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="card bg-light card-box">
-									<div class="card-body text-center">
-										<i class="fas fa-user team-icon"></i>
-										<h3 class="card-title mb-3" style="color: red;">#6</h3>
-										<p class="card-text" style="color: black;">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dolor ea officia quasi beatae mollitia consectetur velit dolorem ipsa at.
-										</p>
-
-										<a href="#" class=""><i class="bi bi-twitter text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-facebook text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-linkedin text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-github text-dark mx-1 team-social-icon"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="card bg-light card-box">
-									<div class="card-body text-center">
-										<i class="fas fa-user team-icon"></i>
-										<h3 class="card-title mb-3" style="color: red;">#7</h3>
-										<p class="card-text" style="color: black;">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dolor ea officia quasi beatae mollitia consectetur velit dolorem ipsa at.
-										</p>
-
-										<a href="#" class=""><i class="bi bi-twitter text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-facebook text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-linkedin text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-github text-dark mx-1 team-social-icon"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="card bg-light card-box">
-									<div class="card-body text-center">
-										<i class="fas fa-user team-icon"></i>
-										<h3 class="card-title mb-3" style="color: red;">#8</h3>
-										<p class="card-text" style="color: black;">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, dolor ea officia quasi beatae mollitia consectetur velit dolorem ipsa at.
-										</p>
-
-										<a href="#" class=""><i class="bi bi-twitter text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-facebook text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-linkedin text-dark mx-1 team-social-icon"></i></a>&nbsp;
-										<a href="#" class=""><i class="bi bi-github text-dark mx-1 team-social-icon"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div><!-- //PAGE -->
-
-		<div id="footer" style="background-color: black;">
-			<div class="container" style="display: inline-block;">
-				<div style="display: inline-block; color: rgb(94, 83, 83);"><p class="lead">Copyright &copy; ARKA IIT(ISM)</p></div>
-				<div style="display: inline-block; text-align: right;">
-					<a href="#" style="position: absolute; bottom: 0; right: 0; padding: 5; margin-bottom: 10px; margin-right: 2rem;"><img src="">
-						<i class="bi bi-arrow-up-circle h1"></i>
-					</a>
-				</div>
-
-			</div>
-		</div>
-
-	</div>
-	<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-	<script src="mapbox.js"></script>
-</body>
+        
+        <script src="js/news-btn.js"></script>
+    </body>
 </html>
