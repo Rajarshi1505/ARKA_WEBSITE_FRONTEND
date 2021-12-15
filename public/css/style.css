@@ -303,6 +303,7 @@ header {
 
 .sub-menu ul li.active a, .sub-menu ul li a:hover {color:#fff !important; background:#161616;}
 
+
 /*-----------------------------------------------------------------------------------*/
 /*	HOME
 /*-----------------------------------------------------------------------------------*/
@@ -370,6 +371,8 @@ header {
 
 
 
+
+
 /*-----------------------------------------------------------------------------------*/
 /*	ABOUT
 /*-----------------------------------------------------------------------------------*/
@@ -384,7 +387,7 @@ header {
 /* __________ Clean Code __________ */
 .cleancode_block {
 	padding:96px 0 78px;
-	background-image:url(../images/scifi_bg4.jpg);
+	background-image:url(../images/2.jpg);
 	/* background-image:url(../images/scifi_bg3.jpg); */
 	/* background-image: url(../images/scifi_bg_gif.gif); */
 	background-size:cover;
